@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nothing to see here yet</title>
+
+    <!-- Geist Sans from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              geist: ['"Geist Sans"', 'sans-serif'],
+            },
+            colors: {
+              background: '#121212',
+              foreground: '#fefefe',
+              muted: '#888888',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: 'Geist Sans', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-background text-foreground min-h-screen flex items-center justify-center">
+    <div class="text-center space-y-4 px-4">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+        There is nothing here yet
+      </h1>
+      <p class="text-muted text-base md:text-lg">
+        Check back later. Or don't. Doesn't matter.
+      </p>
+    </div>
+  </body>
+</html>
