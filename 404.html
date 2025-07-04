@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Not Found</title>
+
+    <!-- Geist Sans from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              geist: ['"Geist Sans"', 'sans-serif'],
+            },
+            colors: {
+              background: '#121212',
+              foreground: '#fefefe',
+              muted: '#888888',
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="./styles.css">
+    
+  </head>
+
+  <body class="bg-background text-foreground min-h-screen flex items-center justify-center">
+    <div class="text-center space-y-4 px-4">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+        404
+      </h1>
+      <p class="text-muted text-base md:text-lg">
+        Requested content was not found.
+      </p>
+      <p class="text-muted text-base md:text-lg">
+
+        <a
+        class="hyperlink hover:underline"
+        href="#"
+        onclick="history.go(-1)">
+            Go Back
+        </a>
+        or 
+        <a
+        class="hyperlink hover:underline"
+        href="./index.html" >
+            Go Home
+        </a>
+
+      </p>
+    </div>
+  </body>
+</html>
